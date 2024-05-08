@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Themed Buttons</title>
+<style>
+  /* Layout styling */
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  .color-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Button styling */
+  .uber-button, .amazon-button, .github-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 50px;
+    color: #fff;
+  }
+  /* Color styling */
+  .uber-color {
+    background-color:white;
+  }
+  .amazon-color {
+    background-color:white ;
+  }
+  .github-color {
+    background-color: rgb(39,39,39);
+  }
+  /* Hover effect */
+  .uber-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .amazon-button:hover {
+    background-color: #cc7a00;
+  }
+  .github-button {
+    border: 1px ;
+  padding: 5px;
+  box-shadow: 5px 5px white;
+  }
+  }
+  .github-button:hover {
+    background-color: #238636;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+</style>
+</head>
+<body>
+  <!-- Container for color sections -->
+  <div class="container">
+    <!-- Uber themed section -->
+    <div class="color-section uber-color">
+      <button class="uber-button" style="background-color: rgb(0,0,0,0.4);">Request Now</button>
+    </div>
+    <!-- Amazon themed section -->
+    <div class="color-section amazon-color">
+      <button class="amazon-button" style="background-color: #ff9900;">Add to Cart</button>
+    </div>
+    <!-- GitHub themed section -->
+    <div class="color-section github-color">
+      <button class="github-button" style="background-color: #2ea44f;">Sign In</button>
+    </div>
+  </div>
+</body>
+</html>
